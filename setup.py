@@ -10,6 +10,7 @@ setup(name='toohot',
       url='',
       packages=['toohot'],
       package_data={'toohot':['system_files/*']},
+      install_requires=['pandas'],
       entry_points={
           'console_scripts': [
               'toohot = toohot:_main',
