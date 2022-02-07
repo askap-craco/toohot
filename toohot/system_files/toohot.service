@@ -1,0 +1,10 @@
+[Unit]
+Description=Keiths TOOHOT shutdown service
+
+[Service]
+Type=simple
+ExecStart=/data/craco/ban115/toohot/venv/bin/python /data/craco/ban115/toohot/src/toohot.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
